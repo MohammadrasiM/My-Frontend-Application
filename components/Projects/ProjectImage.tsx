@@ -8,7 +8,7 @@ function ProjectImage() {
     <>
       {projectsImages?.map((project) => (
         <div
-          key={project?.id}
+          key={project?.title}
           className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#fbb800] to-[#faecc1]"
         >
           <Image
@@ -23,7 +23,7 @@ function ProjectImage() {
               {project?.title}
             </h3>
             <p className="pb-4 pt-2 text-white text-center">{project?.tech}</p>
-            <Link href={project?.link}>
+            <Link passHref href={project?.link}>
               <p className="w-52 text-center py-3 rounded-lg bg-white  text-gray-700 font-bold text-lg cursor-pointer">
                 More info
               </p>

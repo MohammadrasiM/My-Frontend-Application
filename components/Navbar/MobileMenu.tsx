@@ -12,8 +12,9 @@ interface MenuProps {
   nav: boolean;
   // 👇️ turn off type checking
   handleNav: () => any;
+  setNav: any;
 }
-function MobileMenu({ handleNav, nav }: MenuProps) {
+function MobileMenu({ handleNav, nav, setNav }: MenuProps) {
   return (
     <div
       className={
@@ -29,12 +30,16 @@ function MobileMenu({ handleNav, nav }: MenuProps) {
       >
         <div>
           <div className="flex w-full items-center justify-between">
-            <Image
-              src="/../public/assets/smrm.png"
-              alt="/"
-              width="120"
-              height="120"
-            />
+            <Link passHref href="/">
+              <a>
+                <Image
+                  src="/../public/assets/smrm.png"
+                  alt="/"
+                  width="120"
+                  height="120"
+                />
+              </a>
+            </Link>
             <div
               onClick={handleNav}
               className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -46,20 +51,40 @@ function MobileMenu({ handleNav, nav }: MenuProps) {
         </div>
         <div className="py-4 flex flex-col">
           <ul className="uppercase">
-            <Link href="/">
-              <li className="py-4 text-sm">Home</li>
+            <Link passHref href="/">
+              <a>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
+              </a>
             </Link>
-            <Link href="/">
-              <li className="py-4 text-sm">About</li>
+            <Link passHref href="/#about">
+              <a>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
+              </a>
             </Link>
-            <Link href="/">
-              <li className="py-4 text-sm">Skills</li>
+            <Link passHref href="/#skills">
+              <a>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
+              </a>
             </Link>
-            <Link href="/">
-              <li className="py-4 text-sm">Projects</li>
+            <Link passHref href="/#projects">
+              <a>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
+              </a>
             </Link>
-            <Link href="/">
-              <li className="py-4 text-sm">Contact</li>
+            <Link passHref href="/#contact">
+              <a>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Contact
+                </li>
+              </a>
             </Link>
           </ul>
           <div className="pt-40">
@@ -67,12 +92,20 @@ function MobileMenu({ handleNav, nav }: MenuProps) {
               Connect with us!
             </p>
             <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                <GrLinkedinOption />
-              </div>
-              <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                <GrGithub />
-              </div>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/mohammad-rasi-masoudi/"
+              >
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <GrLinkedinOption />
+                </div>
+              </a>
+              <a target="_blank" href="https://github.com/MohammadrasiM">
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <GrGithub />
+                </div>
+              </a>
+
               <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                 <GrMailOption />
               </div>

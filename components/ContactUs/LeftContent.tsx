@@ -27,12 +27,19 @@ function LeftContent() {
         </div>
         <p className="uppercase pt-8">Connect With Me</p>
         <div className="flex items-center justify-between py-4">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-            <GrLinkedinOption />
-          </div>
-          <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-            <GrGithub />
-          </div>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/mohammad-rasi-masoudi/"
+          >
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <GrLinkedinOption />
+            </div>
+          </a>
+          <a target="_blank" href="https://github.com/MohammadrasiM">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+              <GrGithub />
+            </div>
+          </a>
           <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
             <GrMailOption />
           </div>
