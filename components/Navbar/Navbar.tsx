@@ -11,7 +11,6 @@ const Navbar = () => {
 
   useEffect(() => {
     if (router?.query?.id) {
-      console.log(router, "router");
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {

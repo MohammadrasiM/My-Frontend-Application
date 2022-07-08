@@ -13,12 +13,7 @@ function MainMenu({ handleNav, linkColor }: MenuProps) {
     <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
       <Link passHref href="/">
         <a>
-          <Image
-            src="/../public/assets/smrm.jpg"
-            alt="/"
-            width="125"
-            height="120"
-          />
+          <Image src="/assets/smrm.jpg" alt="/" width="125" height="120" />
         </a>
       </Link>
       <div>

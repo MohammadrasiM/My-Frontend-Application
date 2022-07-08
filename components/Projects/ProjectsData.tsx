@@ -2,7 +2,7 @@ export const projectsImages = [
   {
     title: "Uptin WebRtc App",
     website: "https://www.uptin.app/",
-    src: "/../public/assets/projects/uptinPic.jpg",
+    src: "/assets/projects/uptinPic.jpg",
     tech: "React Js , Material Ui , Wazo",
     link: "/projects/uptin",
     id: 1,
@@ -20,7 +20,7 @@ export const projectsImages = [
   {
     title: "Notash Iot App",
     website: "https://www.platform.dmiot.ir/",
-    src: "/../public/assets/projects/Notash.jpg",
+    src: "/assets/projects/Notash.jpg",
     tech: "React Js , Material Ui , WebSocket",
     link: "/projects/notash",
     id: 2,
@@ -43,7 +43,7 @@ export const projectsImages = [
   {
     title: "Star wars",
     website: "https://sith.vercel.app/",
-    src: "/../public/assets/projects/starwars.jpg",
+    src: "/assets/projects/starwars.jpg",
     tech: "Next Js , BootStrap , Content Full",
     link: "/projects/star wars",
     id: 3,
@@ -55,7 +55,7 @@ export const projectsImages = [
   {
     title: "Movies",
     website: "https://moviemaster.vercel.app/",
-    src: "/../public/assets/projects/movie.jpg",
+    src: "/assets/projects/movie.jpg",
     tech: "React Js , Ant D , Swiper",
     link: "/projects/imdb",
     id: 4,
