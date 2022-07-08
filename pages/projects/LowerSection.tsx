@@ -13,7 +13,7 @@ function LowerSection({ description, technologies, website }: InputProps) {
         <p>Project</p>
         <h2>Overview</h2>
         <p>{description}</p>
-        <a target="_blank" href={website}>
+        <a target="_blank" rel="noreferrer" href={website}>
           <button className="px-8 py-2 mt-4 mr-8">Open Website</button>
         </a>
       </div>
