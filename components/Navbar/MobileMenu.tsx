@@ -33,7 +33,7 @@ function MobileMenu({ handleNav, nav, setNav }: MenuProps) {
             <Link passHref href="/">
               <a>
                 <Image
-                  src="/../public/assets/smrm.png"
+                  src="/../public/assets/smrm.jpg"
                   alt="/"
                   width="120"
                   height="120"

@@ -14,7 +14,7 @@ function MainMenu({ handleNav, linkColor }: MenuProps) {
       <Link passHref href="/">
         <a>
           <Image
-            src="/../public/assets/smrm.png"
+            src="/../public/assets/smrm.jpg"
             alt="/"
             width="125"
             height="120"
