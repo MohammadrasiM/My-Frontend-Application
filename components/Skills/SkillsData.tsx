@@ -23,6 +23,6 @@ export const skillsImages = [
     id: 10,
   },
   { title: "Cypress", src: "/assets/skills/cypress.jpg", id: 11 },
-  { title: "WebSocket", src: "/assets/skills/websocket.jpg", id: 12 },
+  { title: "WebSocket", src: "/assets/skills/websocket.png", id: 12 },
   { title: "Github", src: "/assets/skills/github1.jpg", id: 13 },
 ];
