@@ -10,7 +10,7 @@ function About() {
             About
           </p>
           <h2 className="py-4">Me</h2>
-          <p className="py-2 text-gray-600">I am a civil engineer </p>
+          {/* <p className="py-2 text-gray-600">I am a civil engineer </p> */}
           <p className="py-2 text-gray-600">
             After graduation I got acquainted with the world of programming I
             started studying in this field. Due to the attractions it had for
